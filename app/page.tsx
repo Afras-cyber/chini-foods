@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="flex min-h-screen p-24">
-      <p>Akeela sections newww</p>
+      <p>Akeela sections neww</p>
     </main>
   );
 }
