@@ -64,7 +64,7 @@ const CardNews = () => {
                 className="responsive"
               />
             </div>
-            <div className="bg-gray-200 p-10">
+            <div className="bg-gray-100 p-10">
             <div className="flex items-center space-x-5 mt-10 mb-1 pt-10">
                 <h2 className="text-xl font-semibold text-pink-600">{card.title}</h2>
                 <p className="text-gray-500 text-sm">{card.date}</p>

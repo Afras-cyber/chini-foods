@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Navbar from './components/Navbar'
 import CardNews from './components/CardNews'
 import { Footer } from './components/Footer'
+import Nav from './components/Nav'
 
 
 function page() {
@@ -16,6 +17,9 @@ function page() {
     </div>
     <div className=''> 
        <CardNews />
+    </div>
+    <div>
+      <Nav />
     </div>
     </div>
     <div className=''>
