@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import CardNews from './components/CardNews'
 import { Footer } from './components/Footer'
 import Nav from './components/Nav'
+import LatestNews from './components/LatestNews'
 
 
 function page() {
@@ -20,6 +21,9 @@ function page() {
     </div>
     <div>
       <Nav />
+    </div>
+    <div>
+      <LatestNews />
     </div>
     </div>
     <div className=''>
