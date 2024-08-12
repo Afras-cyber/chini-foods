@@ -13,6 +13,7 @@ interface validate {
   first?: string;
   last?: string;
   email?: string;
+  message?: string;
 }
 const validate = (values :any) => {
   const errors: validate = {};
@@ -35,14 +36,17 @@ const validate = (values :any) => {
     errors.email = 'Invalid email address';
   }
 
+  if (!values.message) {
+    errors.message = 'Required';
+  } else if (values.message.length > 100) {
+    errors.message = 'Must be 100 characters or less';
+  }
+
   return errors;
 };
 
 
 const Page = () => {
-  // Pass the useFormik() hook initial form values, a validate function that will be called when
-  // form values change or fields are blurred, and a submit function that will
-  // be called when the form is submitted
   const formik = useFormik({
     initialValues: {
       first: '',
