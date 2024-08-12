@@ -127,11 +127,13 @@ const LatestNews = () => {
           date="16 May 2024"
         />
           </div>
-          
-        </div>
-        <Stack spacing={2} className='m-10 justify-center'>
+        
+        <Stack spacing={2} className='ml-96 mt-20 align-middle justify-center' >
          <Pagination count={10} color="primary"  />
        </Stack>
+      
+        </div>
+        
     </>
 
 
