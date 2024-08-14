@@ -13,7 +13,7 @@ const Nav = () => {
 };
 
   return (
-    <nav className='flex flex-wrap justify-between'>
+    <nav className='flex flex-wrap justify-between '>
             <div className='flex'>
                 <h1 className='text-2xl font-extrabold'>Discover latest news</h1>
             </div>

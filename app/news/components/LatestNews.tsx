@@ -128,7 +128,7 @@ const LatestNews = () => {
         />
           </div>
         
-        <Stack spacing={2} className='ml-96 mt-20 align-middle justify-center' >
+        <Stack spacing={2} className=' items-center mt-20  justify-center' >
          <Pagination count={10} color="primary"  />
        </Stack>
       

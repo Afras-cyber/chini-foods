@@ -7,8 +7,8 @@ import { IoIosArrowForward } from "react-icons/io";
 
 export const Footer = () => {
   return (
-    <div className=' grid grid-cols-3 w-full h-auto bg-gray-100   '>
-     <div className='lg:ml-20 m-5 mt-20 mb-36 '>
+    <div className=' grid grid-cols-1 lg:grid-cols-3 w-full h-auto bg-gray-100   '>
+     <div className='ml-10 lg:ml-20 m-5 mt-20 mb-36 '>
      <Image src={logo} alt="contactimage" width={70} height={70} className="" />
      <h1 className='text-2xl font-extrabold pt-10'>Media Kit</h1>
       <p className=' font-light pt-10'>Download images, factsheets, and more</p>
@@ -18,7 +18,7 @@ export const Footer = () => {
       </Link>
      </div>
 
-     <div className='lg:ml-20 m-5  mt-20 mb-36 '>
+     <div className='ml-10 lg:ml-20 m-5 mt-20 mb-36'>
      <Image src={logo} alt="contactimage" width={70} height={70} className="" />
      <h1 className='text-2xl font-extrabold pt-10'>Contact us</h1>
      <p className=' font-light pt-10'>Get in touch with our PR team</p>
