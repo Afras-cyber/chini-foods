@@ -1,13 +1,64 @@
+"use client"
 import React from 'react'
 import Image from "next/image";
 import TextField from '@mui/material/TextField';
+import { useFormik } from 'formik';
+
 
 import Button from "@/components/Button";
 import contactbg from "/public/contact.jpeg";
 import pau from "/public/Pau.png";
 
+interface validate {
+  first?: string;
+  last?: string;
+  email?: string;
+  message?: string;
+}
+const validate = (values :any) => {
+  const errors: validate = {};
 
-function page() {
+  if (!values.first) {
+    errors.first = 'Required';
+  } else if (values.first.length > 15) {
+    errors.first = 'Must be 15 characters or less';
+  }
+
+  if (!values.last) {
+    errors.last = 'Required';
+  } else if (values.last.length > 20) {
+    errors.last = 'Must be 20 characters or less';
+  }
+
+  if (!values.email) {
+    errors.email = 'Required';
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = 'Invalid email address';
+  }
+
+  if (!values.message) {
+    errors.message = 'Required';
+  } else if (values.message.length > 100) {
+    errors.message = 'Must be 100 characters or less';
+  }
+
+  return errors;
+};
+
+
+const Page = () => {
+  const formik = useFormik({
+    initialValues: {
+      first: '',
+      last: '',
+      email: '',
+      message: '',
+    },
+    validate,
+    onSubmit: values => {
+      alert(JSON.stringify(values, null, 2));
+    },
+  });
   return (
     <>
     <div className='relative'>
@@ -21,7 +72,7 @@ function page() {
 
     <div className='lg:grid lg:grid-cols-2 md:grid-cols-2 m-20 sm:m-10'>
 
-    <form className='max-w-4xl mx-auto p-6'>
+    <form onSubmit={formik.handleSubmit} className='max-w-4xl mx-auto p-6'>
   <h1 className='text-2xl font-bold mb-6'>Contact Form</h1>
   
   <div className='mb-4'>
@@ -32,14 +83,25 @@ function page() {
           placeholder=""
           helperText="First"
           className='w-full'
+          id="first"
+          type="text"
+          onChange={formik.handleChange}
+          value={formik.values.first}
         />
+              {formik.errors.first ? <div className='text-red-600'>{formik.errors.first}</div> : null}
+
       </div>
       <div className='w-full'>
         <TextField
           placeholder=""
           helperText="Last"
           className='w-full'
+          id="last"
+          type="text"
+          onChange={formik.handleChange}
+          value={formik.values.last}
         />
+        {formik.errors.last ? <div className='text-red-600'>{formik.errors.last}</div> : null}
       </div>
     </div>
   </div>
@@ -51,7 +113,12 @@ function page() {
         className='w-full'
         placeholder=""
         helperText=""
+        id="email"
+        type="email"
+        onChange={formik.handleChange}
+        value={formik.values.email}
       />
+      {formik.errors.email ? <div className='text-red-600'>{formik.errors.email}</div> : null}
     </div>
   </div>
   
@@ -61,12 +128,16 @@ function page() {
       <textarea
         className='w-full h-52 p-2 border rounded'
         placeholder=""
-      ></textarea>
+        id="message"
+        onChange={formik.handleChange}
+        value={formik.values.message}
+            />
+        {formik.errors.message ? <div className='text-red-600'>{formik.errors.message}</div> : null}
     </div>
   </div>
   
   <div className='flex justify-start'>
-    <Button>Submit</Button>
+    <Button type="submit">Submit</Button>
   </div>
 </form>
       <div className='m-10 pt-28'>
@@ -83,4 +154,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

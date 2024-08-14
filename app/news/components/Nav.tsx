@@ -29,7 +29,7 @@ const Nav = () => {
                     {showMore ? '- FEWER' : '+ MORE'}
                 </button>
                  {showMore && (
-                <div className="flex flex-wrap  gap-3 w-full lg:w-1/2 mt-2">
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 w-full mt-2">
                     <Link href="/news/press-releases"><NewsButton className=''>EDITORIALS</NewsButton></Link>
                     <Link href="/news/press-releases"><NewsButton className=''>FOOD DELIVERY</NewsButton></Link>
                     <Link href="/news/press-releases"><NewsButton className=''>INFOGRAPHICS</NewsButton></Link>
