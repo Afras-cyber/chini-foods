@@ -54,14 +54,11 @@ const CardNews = () => {
             index === currentCard ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <div className='grid grid-cols-2 h-full'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 h-full'>
             <div className='relative w-full h-full'>
               <Image
                 src={card.image}
-                layout='fill'
-                objectFit='cover'
                 alt={`Image for ${card.title}`}
-                className="responsive"
               />
             </div>
             <div className="bg-gray-100 p-10">

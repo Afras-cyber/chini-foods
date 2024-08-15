@@ -19,7 +19,7 @@ function page() {
     <div className=''> 
        <CardNews />
     </div>
-    <div>
+    <div className=''>
       <Nav />
     </div>
     <div>
