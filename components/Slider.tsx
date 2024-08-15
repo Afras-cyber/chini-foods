@@ -42,7 +42,7 @@ const Slider = () => {
                   Customers come first
                 </h3>
                 <p className="font-montserrat ">
-                  We're far more than just swift food delivery. foodpanda
+                  We&apos;re far more than just swift food delivery. foodpanda
                   enables customers to pick up their takeaway meals, skip boring
                   grocery trips and send parcels. Customer needs are the core
                   and centre of our business. Download the app to experience
@@ -65,9 +65,9 @@ const Slider = () => {
                   Our riders are our heroes
                 </h3>
                 <p className="font-montserrat ">
-                  We're here to provide exciting opportunities and empower work
-                  flexibility. Learn more about our riders' journey or sign up
-                  to become one.
+                  We&apos;re here to provide exciting opportunities and empower
+                  work flexibility. Learn more about our riders&apos; journey or
+                  sign up to become one.
                 </p>
               </div>
 

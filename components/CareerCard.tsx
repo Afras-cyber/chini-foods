@@ -12,7 +12,7 @@ const CareerCard = () => {
         <div className="md:w-1/2 md:pr-8 lg:pr-16 mt-8 md:mt-0 order-1 flex flex-col items-start justify-center  md:order-1 md:pl-16 ">
           <aside className=" p-4 md:p-0">
             <h2 className="font-montserrat font-bold">
-              Find the job you'd love{" "}
+              Find the job you&apos;d love
             </h2>
             <p>Hungry to make a difference? There’s a seat at our table!</p>
             <p>

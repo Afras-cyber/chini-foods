@@ -1,12 +1,10 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
-import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-SwiperCore.use([Autoplay, Navigation, Pagination]);
 
 const SingleNewsCard = () => {
   return (
@@ -116,7 +114,6 @@ const SingleNewsCard = () => {
                       href={`https://www.foodpanda.com/category/${category
                         .toLowerCase()
                         .replace(/\s+/g, "-")}/`}
-                      alt={`View all posts in ${category}`}
                     >
                       {category}
                     </a>
