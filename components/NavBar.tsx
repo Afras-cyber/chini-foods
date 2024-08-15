@@ -116,6 +116,14 @@ const NavBar = (): JSX.Element => {
               >
                 Contact
               </a>
+              <a
+                href="/careers"
+                className={`text-sm py-5 border-t-2 rounded-none ${isActive(
+                  "/contact"
+                )} hover:border-pink-500 text-black hover:bg-white hover:text-black rounded-lg p-2 font-montserrat font-semibold`}
+              >
+                Careers
+              </a>
               {!isSearchOpen && (
                 <div className="relative inline-block group">
                   <a href="#" className="">
