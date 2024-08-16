@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "./Button";
+import ButtonMain from "./ButtonMain";
 
 const CareerCard = () => {
   return (
@@ -21,7 +22,7 @@ const CareerCard = () => {
             </p>
             <div className="pt-4">
               <a href="https://careers.foodpanda.com">
-                <Button>Join us!</Button>
+                <ButtonMain>Join us!</ButtonMain>
               </a>
             </div>
           </aside>

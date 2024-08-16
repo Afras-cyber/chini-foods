@@ -5,6 +5,7 @@ import NewsCard from "@/components/NewsCard";
 import Image from "next/image";
 import about from "../app/about/page";
 import Button from "@/components/Button";
+import ButtonMain from "@/components/ButtonMain";
 
 export default function Home() {
   return (
@@ -43,7 +44,7 @@ export default function Home() {
               </p>
               <div className="pt-4">
                 <a href="#">
-                  <Button>read our Story</Button>
+                  <ButtonMain>read our Story</ButtonMain>
                 </a>
               </div>
             </aside>
@@ -84,7 +85,7 @@ export default function Home() {
               </p>
               <div className="pt-4">
                 <a href="https://www.foodpanda.sg/corporate">
-                  <Button>learn more</Button>
+                  <ButtonMain>learn more</ButtonMain>
                 </a>
               </div>
             </aside>

@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import Button from "./Button";
 import SearchBar from "./SearchBar";
 import { IoIosArrowForward } from "react-icons/io";
+import ButtonMain from "./ButtonMain";
 
 const NavBar = (): JSX.Element => {
   const [isClick, setIsClick] = useState(false);
@@ -93,7 +94,7 @@ const NavBar = (): JSX.Element => {
                 About
               </a>
               <a
-                href="/newsroom"
+                href="/news"
                 className={`text-sm py-5 border-t-2 rounded-none ${isActive(
                   "/newsroom"
                 )} hover:border-pink-500 text-black hover:bg-white hover:text-black rounded-lg p-2 font-montserrat font-semibold`}
@@ -127,9 +128,9 @@ const NavBar = (): JSX.Element => {
               {!isSearchOpen && (
                 <div className="relative inline-block group">
                   <a href="#" className="">
-                    <Button className="text-sm text-white bg-pink-500 rounded-full font-montserrat font-semibold">
+                    <ButtonMain className="text-sm text-white bg-pink-500 rounded-full font-montserrat font-semibold">
                       Choose Location
-                    </Button>
+                    </ButtonMain>
                   </a>
                   <div className="rounded-none text-sm absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
                     <a
