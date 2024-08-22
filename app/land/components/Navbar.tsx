@@ -27,7 +27,7 @@ const Navbar = () => {
               <p  className="text-white font-bold ">Do you need a business account?</p>
             </li>
              <li className="">
-             <button className='border border-white text-white bg-pink-700 hover:bg-white hover:text-black px-5 py-2 text-sm'>SIGN UP NOW</button>
+             <button className='border border-white rounded-lg text-white bg-pink-700 hover:bg-white hover:text-black px-5 py-2 text-sm'>SIGN UP NOW</button>
              </li>
         </ul> 
         <ul className='flex justify-end items-end'>
@@ -53,16 +53,16 @@ const Navbar = () => {
       <ul className="flex  gap-[4vw] justify-center items-center">  
         
         <li className="">
-        <button className='border border-black text-black px-3 py-2 text-sm'>Log in</button>
+        <button className='border border-black rounded-lg text-black px-3 py-2 text-sm'>Log in</button>
         </li>
         <li className="">
-        <button className=' text-white bg-pink-700  px-3 py-2 text-sm'>Sing up</button>
+        <button className=' text-white rounded-lg bg-pink-700  px-3 py-2 text-sm'>Sing up</button>
         </li>
         <li className="">
-        <button className="flex items-center justify-center"><TbWorld className="" /> EN <IoIosArrowDown className="" /></button>
+        <button className="flex items-center justify-center "><TbWorld className="mr-2" /> EN <IoIosArrowDown className="ml-2" /></button>
         </li>
         <li>
-        <PiHandbagSimpleLight />
+        <PiHandbagSimpleLight  className='mr-5'/>
         </li>
       </ul> 
         </nav>

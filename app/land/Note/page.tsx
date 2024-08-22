@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { TextField, InputAdornment } from '@mui/material';
 import { TbCurrentLocation } from "react-icons/tb";
 import { IoIosArrowForward } from "react-icons/io";
+import CardUI from './components/CardUI';
 
 
 import Image from 'next/image'
@@ -15,7 +16,7 @@ const page = () => {
       <div className='lg:w-2/3 p-5 pt-10 lg:p-20 lg:pt-52 '>
       <h1 className='text-xl lg:text-4xl font-bold pb-5'>It&apos;s the food and groceries you love, delivered</h1>
       
-      <div className=' p-5 pl-0 bg-white rounded-md grid grid-cols-1 gap-4 sm:grid-cols-2'>
+      <div className=' p-5 pl-0 bg-white rounded-md grid grid-cols-1 gap-2 sm:grid-cols-2 '>
       <TextField
        id="outlined-textarea"
        label="Your street and street number"
@@ -50,7 +51,7 @@ const page = () => {
     </div>
 
     <main className='p-10'>
-        <div className='flex gap-3 relative '>
+        <div className='flex items-center gap-3 relative '>
         <p className=" relative group  ">
               <Link href="#" className=" text-center">
                 Homepage
@@ -61,6 +62,11 @@ const page = () => {
             <h1>Islamabad</h1>
         </div>
         <h1 className='text-4xl pt-5'>All restaurants</h1>
+        
+        <div className=' '>
+          <CardUI />
+        </div>
+        
 
     </main>
 
