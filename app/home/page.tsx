@@ -3,7 +3,7 @@ import GetApp from "@/components/GetApp";
 import Hero from "@/components/Hero";
 import NewsCard from "@/components/NewsCard";
 import Image from "next/image";
-import about from "../app/about/page";
+import about from "./about/page";
 import Button from "@/components/Button";
 import ButtonMain from "@/components/ButtonMain";
 

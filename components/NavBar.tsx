@@ -78,7 +78,7 @@ const NavBar = (): JSX.Element => {
           <div className="hidden md:block">
             <div className="menu-item ml-4 flex items-center space-x-4">
               <a
-                href="/"
+                href="/home"
                 className={`text-sm py-5 border-t-2 rounded-none ${isActive(
                   "/"
                 )} hover:border-pink-500 text-black hover:bg-white hover:text-black rounded-lg p-2 font-montserrat font-semibold`}
@@ -86,7 +86,7 @@ const NavBar = (): JSX.Element => {
                 Home
               </a>
               <a
-                href="/about"
+                href="/home/about"
                 className={`text-sm py-5 border-t-2 rounded-none ${isActive(
                   "/about"
                 )} hover:border-pink-500 text-black hover:bg-white hover:text-black rounded-lg p-2 font-montserrat font-semibold`}
@@ -94,7 +94,7 @@ const NavBar = (): JSX.Element => {
                 About
               </a>
               <a
-                href="/news"
+                href="/home/news"
                 className={`text-sm py-5 border-t-2 rounded-none ${isActive(
                   "/newsroom"
                 )} hover:border-pink-500 text-black hover:bg-white hover:text-black rounded-lg p-2 font-montserrat font-semibold`}
@@ -102,7 +102,7 @@ const NavBar = (): JSX.Element => {
                 Newsroom
               </a>
               <a
-                href="/panda-ads"
+                href="/home/panda-ads"
                 className={`text-sm py-5 border-t-2 rounded-none ${isActive(
                   "/panda-ads"
                 )} hover:border-pink-500 text-black hover:bg-white hover:text-black rounded-lg p-2 font-montserrat font-semibold`}
@@ -110,7 +110,7 @@ const NavBar = (): JSX.Element => {
                 Panda Ads
               </a>
               <a
-                href="/contact"
+                href="/home/contact"
                 className={`text-sm py-5 border-t-2 rounded-none ${isActive(
                   "/contact"
                 )} hover:border-pink-500 text-black hover:bg-white hover:text-black rounded-lg p-2 font-montserrat font-semibold`}
@@ -194,25 +194,31 @@ const NavBar = (): JSX.Element => {
       {isClick && (
         <div className="md:hidden bg-black h-[50vh] text-2xl ">
           <div className="px-8 pt-14 pb-3 space-y-1 sm:px-3">
-            <a href="/" className="text-white block bg-black rounded-lg">
+            <a href="/home" className="text-white block bg-black rounded-lg">
               Home
             </a>
-            <a href="/about" className="text-white block bg-black rounded-lg">
+            <a
+              href="/home/about"
+              className="text-white block bg-black rounded-lg"
+            >
               About
             </a>
             <a
-              href="/newsroom"
+              href="/home/newsroom"
               className="text-white block bg-black rounded-lg"
             >
               Newsroom
             </a>
             <a
-              href="/panda-ads"
+              href="/home/panda-ads"
               className="text-white block bg-black rounded-lg"
             >
               Panda Ads
             </a>
-            <a href="/contact" className="text-white block bg-black rounded-lg">
+            <a
+              href="/home/contact"
+              className="text-white block bg-black rounded-lg"
+            >
               Contact
             </a>
             <div className="relative inline-block">

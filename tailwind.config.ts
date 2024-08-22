@@ -30,9 +30,11 @@ const config: Config = {
         },
         pink: {
           500: '#FF2B85',
+          900: '#ffb2bb'
         },
         gray:{
           500: "#a6a6a6",
+          600:"#eff2f4"
         }
       },
       screens: {
@@ -43,15 +45,20 @@ const config: Config = {
       maxWidth: {
         '10xl': '1512px',
       },
+      minHeight: {
+        '65rem': '65rem',
+      },
       fontFamily: {
         signature: ["Great Vibes", "cursive"],
         sans: ['sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'], 
         Open_Sans: ['Open Sans', 'sans-serif'],
+        avenir: ['Avenir Next World, sans-serif'],
       },
       fontWeight: {
         semibold: '700', 
-        Regular: '100',
+        Regular: '500',
+        Regularlight:'500',
       },
       keyframes: {
         'zoom-cover': {
