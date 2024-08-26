@@ -56,7 +56,7 @@ const page = () => {
 
       <div className='bg-gray-50 flex items-center justify-center gap-5 h-20'>
         <div>
-        <Image src={phone} alt="phoneimage"  width={150} height={150} className="" />
+        <Image src={phone} alt="phoneimage"  width={150} height={150} className="mb-auto" />
         </div>
         <div className='font-thin'>Download our free app!</div>
         <div className='flex gap-3'>

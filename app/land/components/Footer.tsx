@@ -16,7 +16,7 @@ const Footer = () => {
     <div>
       <footer>
       <hr className=""/>
-        <div className=" grid grid-cols-1  lg:grid-cols-4  p-14 pb-5">
+        <div className=" grid grid-cols-1  lg:grid-cols-4 gap-5 p-14 pb-5">
         <div className="col-md-2 ">
             <h5 className="p-2 group font-bold text-2xl "></h5>
             <p className=" text-gray-500 p-2 group ">&copy;foodpanda</p>
@@ -95,8 +95,8 @@ const Footer = () => {
         <hr className="" />
       
     </footer>
-    <footer className="grid grid-cols-1 lg:grid-cols-2 items-center text-center text-white">
-       <div className=" flex pl-8 m-5">
+    <footer className="grid grid-cols-1 lg:grid-cols-2  items-center text-center text-white">
+       <div className=" flex pl-8 m-5 ">
        
          <Image 
              src={logo} 
@@ -115,18 +115,18 @@ const Footer = () => {
          /> 
          
        </div>
-       <div className="flex pl-8 m-5">
+       <div className="flex pl-8 m-5 lg:ml-auto lg:mr-20 gap-3">
               <Link
-                className="text-2xl  "
+                className="text-xl text-gray-700 border-2 border-gray-400 rounded-full p-1 hover:scale-105 hover:bg-gray-100"
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.google.com/search?q=instagram&rlz=1C1KNTJ_enLK1078LK1078&oq=ins&gs_lcrp=EgZjaHJvbWUqDQgDEAAYgwEYsQMYgAQyDwgAEEUYORiDARixAxiABDIMCAEQIxgnGIAEGIoFMgYIAhAjGCcyDQgDEAAYgwEYsQMYgAQyEAgEEAAYgwEYsQMYgAQYigUyBggFEAUYQDIGCAYQRRg8MgYIBxBFGD3SAQg1OTczajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
               >
-                <FaInstagram />
+                <FaInstagram className='' />
 
               </Link>
               <Link
-                className="text-2xl  "
+                className="text-xl text-gray-700 border-2 border-gray-400 rounded-full p-1 hover:scale-105 hover:bg-gray-100"
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyour-website.com%2F&amp;src=sdkpreparse"

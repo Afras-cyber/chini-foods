@@ -124,13 +124,13 @@ function Foods(prop : any) {
               alt={`Image for ${prop.title}`}
               className='transform transition-transform duration-300 group-hover:scale-105'
             />
-            <div className='absolute m-2 inset-0 items-center justify-center  p-1 lg:left-5'>
-            <h1 className='text-white   inline-flex md:text-sm bg-pink-600 rounded-md  '> 
-              <RiDiscountPercentLine className='gap-2' /> {prop.offer}</h1>
+            <div className='absolute m-2 inset-0 items-center lg:left-5'>
+            <h1 className='text-white   inline-flex md:text-sm bg-pink-600 rounded-md px-2'> 
+              <RiDiscountPercentLine className='gap-2 m-1' /> {prop.offer}</h1>
             </div>
             <div className='absolute inset-10 m-2   lg:left-5'>
-            <h1 className='text-white   inline-flex md:text-sm bg-pink-600 rounded-md'>
-            <RiDiscountPercentLine className=' ' />
+            <h1 className='text-white   inline-flex md:text-sm bg-pink-600 rounded-md px-2'>
+            <RiDiscountPercentLine className=' m-1' />
             {prop.offer1}</h1>
             </div>
             </div>
