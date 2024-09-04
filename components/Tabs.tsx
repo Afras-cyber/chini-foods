@@ -1,22 +1,18 @@
 import React, { useState } from "react";
-import { useSwipeable } from "react-swipeable";
+import { useSwipeable, SwipeableProps } from "react-swipeable";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
 
-  const handleTabClick = (e, tab) => {
+  const handleTabClick = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    tab: string
+  ) => {
     e.preventDefault();
     setActiveTab(tab);
   };
 
-  const swipeHandlers = useSwipeable({
-    onSwipedLeft: () => handleSwipe("next"),
-    onSwipedRight: () => handleSwipe("prev"),
-    preventDefaultTouchmoveEvent: true,
-    trackMouse: true,
-  });
-
-  const handleSwipe = (direction) => {
+  const handleSwipe = (direction: "next" | "prev") => {
     const tabs = ["tab1", "tab2", "tab3", "tab4", "tab5", "tab6"];
     const currentIndex = tabs.indexOf(activeTab);
     let newIndex;
@@ -29,6 +25,13 @@ const Tabs = () => {
 
     setActiveTab(tabs[newIndex]);
   };
+
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () => handleSwipe("next"),
+    onSwipedRight: () => handleSwipe("prev"),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  } as SwipeableProps);
 
   return (
     <div className="container mx-auto p-4 pt-24">

@@ -1,6 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 
-const SearchBar = ({ handleFocus, handleBlur }) => {
+type SearchBarProps = {
+  handleFocus: () => void;
+  handleBlur: () => void;
+};
+
+const SearchBar: FC<SearchBarProps> = ({ handleFocus, handleBlur }) => {
   return (
     <form action="" className="relative mx-auto w-max">
       <input

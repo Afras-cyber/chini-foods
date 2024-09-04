@@ -9,6 +9,7 @@ import Tabs from "@/components/Tabs";
 import Hero from "./components/Hero";
 import Button from "@/components/Button";
 import Image from "next/image";
+import ButtonMain from "@/components/ButtonMain";
 
 function page() {
   return (
@@ -71,7 +72,7 @@ function page() {
 
               <div className="pt-4">
                 <a href="https://careers.foodpanda.com">
-                  <Button>view jobs</Button>
+                  <ButtonMain>view jobs</ButtonMain>
                 </a>
               </div>
             </aside>
