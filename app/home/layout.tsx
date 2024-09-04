@@ -18,14 +18,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>
+  return (<>
         <NavBar />
         <main className="relative overflow-hidden">{children}</main>
         <ScrollTotopButton />
         <Footer />
-      </body>
-    </html>
+     
+  </>
+
   );
 }
